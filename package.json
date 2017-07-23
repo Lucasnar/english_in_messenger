@@ -1,0 +1,19 @@
+{
+  "name": "english_in_messenger",
+  "version": "1.0.0",
+  "description": "Learn English using Facebook Messenger",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lucasnar/english_in_messenger.git"
+  },
+  "author": "Lucas Narciso (lucasnar@gmail.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lucasnar/english_in_messenger/issues"
+  },
+  "homepage": "https://github.com/lucasnar/english_in_messenger#readme"
+}
