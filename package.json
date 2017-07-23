@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/lucasnar/english_in_messenger#readme",
   "dependencies": {
+    "dotenv": "^4.0.0",
     "messenger-bot": "^2.4.0"
   }
 }

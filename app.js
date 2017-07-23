@@ -1,4 +1,6 @@
 'use strict'
+
+require('dotenv').config()
 const http = require('http');
 const Bot = require('messenger-bot');
 
