@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/lucasnar/english_in_messenger/issues"
   },
-  "homepage": "https://github.com/lucasnar/english_in_messenger#readme"
+  "homepage": "https://github.com/lucasnar/english_in_messenger#readme",
+  "dependencies": {
+    "messenger-bot": "^2.4.0"
+  }
 }
