@@ -1,8 +1,8 @@
 {
   "development": {
     "driver": "pg",
-    "user": {"ENV": "DB_DEVELOPMENT_USERNAME"},
-    "password": {"ENV": "DB_DEVELOPMENT_PASSWORD"},
-    "database": {"ENV": "DB_DEVELOPMENT"}
+    "user": {"ENV": "PGUSER"},
+    "password": {"ENV": "PGPASSWORD"},
+    "database": {"ENV": "PGDATABASE"}
   }
 }
