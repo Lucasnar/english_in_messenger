@@ -5,8 +5,8 @@ const http = require('http');
 const Bot = require('messenger-bot');
 
 let bot = new Bot({
-  token: process.env.PAGE_TOKEN,
-  verify: process.env.VERIFY_TOKEN
+  token: process.env.FB_PAGE_TOKEN,
+  verify: process.env.FB_VERIFY_TOKEN
 });
 
 bot.on('error', (err) => {
