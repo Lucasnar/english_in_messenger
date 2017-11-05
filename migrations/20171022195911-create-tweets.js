@@ -15,16 +15,29 @@ exports.setup = function(options, seedLink) {
 };
 
 exports.up = function(db) {
-  return db.createTable("twitter_accounts", {
+  return db.createTable("tweets", {
     id: { type: "int", primaryKey: true, autoIncrement: true },
-    name: "string",
-    screen_name: { type: "string", notNull: true },
-    twitterid: "string"
+    text: "text",
+    url: "string",
+    twitterid: "string",
+    twitter_account_id: {
+      type: "int",
+      notNull: true,
+      foreignKey: {
+        name: 'tweets_twitter_account_id_fk',
+        table: 'twitter_accounts',
+        rules: {
+          onDelete: 'CASCADE',
+          onUpdate: 'RESTRICT'
+        },
+        mapping: 'id'
+      }
+    }
   });
 };
 
 exports.down = function(db) {
-  return db.dropTable("twitter_accounts");
+  return db.dropTable("tweets");
 };
 
 exports._meta = {
