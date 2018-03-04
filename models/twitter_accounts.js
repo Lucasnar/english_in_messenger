@@ -4,12 +4,11 @@ module.exports = (sequelize, DataTypes) => {
     name: DataTypes.STRING,
     screenName: { type: DataTypes.STRING, field: 'screen_name' },
     twitterid: DataTypes.STRING
-  }, {
-    classMethods: {
-      associate: function(models) {
-        // associations can be defined here
-      }
-    }
   });
+
+  TwitterAccounts.associate = function (models) {
+    // associations can be defined here
+  };
+
   return TwitterAccounts;
 };
