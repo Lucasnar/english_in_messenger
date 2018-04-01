@@ -4,10 +4,12 @@ module.exports = (sequelize, DataTypes) => {
     name: DataTypes.STRING,
     screenName: { type: DataTypes.STRING, field: 'screen_name' },
     twitterid: DataTypes.STRING
+  }, {
+    underscored: true
   });
 
   TwitterAccount.associate = function (models) {
-    TwitterAccount.belogsTo(models.Languages);
+    TwitterAccount.belogsTo(models.Language);
   };
 
   return TwitterAccount;

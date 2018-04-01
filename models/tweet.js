@@ -4,6 +4,8 @@ module.exports = (sequelize, DataTypes) => {
     text: DataTypes.TEXT,
     url: DataTypes.STRING,
     twitterid: DataTypes.STRING
+  }, {
+    underscored: true
   });
 
   Tweet.associate = function (models) {

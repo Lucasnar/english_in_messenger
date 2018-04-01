@@ -2,6 +2,8 @@
 module.exports = (sequelize, DataTypes) => {
   var Language = sequelize.define('languages', {
     name: DataTypes.STRING
+  }, {
+    underscored: true
   });
 
   Language.associate = function (models) {
