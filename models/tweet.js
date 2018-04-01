@@ -8,6 +8,7 @@ module.exports = (sequelize, DataTypes) => {
 
   Tweet.associate = function (models) {
     Tweet.belongsTo(models.TwitterAccount);
+    Tweet.belongsTo(models.Language);
   };
 
   return Tweet;

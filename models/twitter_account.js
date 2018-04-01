@@ -7,7 +7,7 @@ module.exports = (sequelize, DataTypes) => {
   });
 
   TwitterAccount.associate = function (models) {
-    // associations can be defined here
+    TwitterAccount.belogsTo(models.Languages);
   };
 
   return TwitterAccount;
