@@ -1,7 +1,8 @@
 'use strict';
 module.exports = (sequelize, DataTypes) => {
-  var LearningProfile = sequelize.define('learning_profiles', {}, {
-    underscored: true
+  var LearningProfile = sequelize.define('LearningProfile', {}, {
+    underscored: true,
+    tableName: 'learning_profiles',
   });
 
   LearningProfile.associate = function (models) {

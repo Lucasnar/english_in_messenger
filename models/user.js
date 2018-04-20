@@ -4,7 +4,8 @@ module.exports = (sequelize, DataTypes) => {
     username: DataTypes.STRING,
     facebookid: DataTypes.STRING
   }, {
-    underscored: true
+    underscored: true,
+    tableName: 'users',
   });
 
   User.associate = function (models) {
