@@ -22,8 +22,8 @@
     "messenger-bot": "^2.4.0",
     "pg": "^6.4.2",
     "pg-hstore": "^2.3.2",
-    "sequelize": "^4.30.1",
+    "sequelize": "^4.37.10",
     "sequelize-cli": "^3.2.0",
-    "twit": "^2.2.9"
+    "twit": "^2.2.10"
   }
 }
