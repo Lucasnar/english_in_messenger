@@ -1,9 +1,10 @@
 'use strict';
 module.exports = (sequelize, DataTypes) => {
-  var Language = sequelize.define('languages', {
+  var Language = sequelize.define('Language', {
     name: DataTypes.STRING
   }, {
-    underscored: true
+    underscored: true,
+    tableName: 'languages',
   });
 
   Language.associate = function (models) {

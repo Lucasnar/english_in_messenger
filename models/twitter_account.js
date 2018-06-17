@@ -1,15 +1,16 @@
 'use strict';
 module.exports = (sequelize, DataTypes) => {
-  var TwitterAccount = sequelize.define('twitter_accounts', {
+  var TwitterAccount = sequelize.define('TwitterAccount', {
     name: DataTypes.STRING,
     screenName: { type: DataTypes.STRING, field: 'screen_name' },
     twitterid: DataTypes.STRING
   }, {
-    underscored: true
+    underscored: true,
+    tableName: 'twitter_accounts',
   });
 
   TwitterAccount.associate = function (models) {
-    TwitterAccount.belogsTo(models.Language);
+    TwitterAccount.belongsTo(models.Language);
   };
 
   return TwitterAccount;
